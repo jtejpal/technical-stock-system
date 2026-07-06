@@ -37,8 +37,8 @@ async def main():
 
     tools = await client.get_tools()
 
-    design_agent_system_prompt = Path("agents/design-agent-v1.md").read_text()
-    technical_agent_system_prompt = Path("agents/technical-agent-v1.md").read_text()
+    design_agent_system_prompt = Path("agents/design-agent.md").read_text()
+    technical_agent_system_prompt = Path("agents/technical-agent.md").read_text()
 
     llm = ChatOpenAI(
         model="gpt-5.4-nano-2026-03-17",
