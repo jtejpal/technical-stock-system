@@ -30,7 +30,7 @@ async def main():
     client = MultiServerMCPClient({
         "technical": {
             "transport": "stdio",
-            "command": "python",
+            "command": "python3",
             "args": ["mcp/technical-mcp.py"]
         }
     })
